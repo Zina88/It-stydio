@@ -1,0 +1,114 @@
+.about-us {
+    text-align: center; 
+    padding-top: 50px;
+
+    @media screen and(min-width: 768px){
+   
+    }
+ 
+}
+
+.services-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.47;
+    text-align: center;
+
+    color: $text-title-color;
+
+        @media screen and(min-width: 768px) {
+            margin-bottom: 50px;
+        }
+}
+
+.services-text {
+    margin-bottom: 58px;
+    font-size: 16px;
+    line-height: 1.56;
+    text-align: center;
+}
+
+.services-list {
+    margin-bottom: 30px;
+    @media screen and(min-width: 768px){
+        display: flex;
+    justify-content: center; 
+    }
+   
+}
+
+.services-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #000000;
+
+    @media screen and(min-width:768px){
+        margin-right: 15px;
+    }
+}
+
+.services-item:last-child(){
+    margin-bottom: 0;
+}
+
+.services-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    text-align: left;
+    border-radius: 50%;
+    border: 5px double hsla(220, 100%, 64%, 0.719);
+}
+
+.services-box {
+    padding-left: 17px;
+}
+
+.services-logo {
+    fill: $accent-color;
+}
+
+.services-subtitle {
+    margin-bottom: 12px;
+    text-align: left;
+    color: $text-title-color;
+}
+
+.services-text-p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.57;
+    color: $text-color;
+}
+
+.btn-services {
+margin-bottom: 50px;
+    @media screen and(min-width: 768px){
+
+    }
+    display: inline-block;
+    padding: 15px 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    border: transparent;
+}
+
+.btn-services:hover,
+.btn-services:focus {
+    background-color: $button-hover;
+}

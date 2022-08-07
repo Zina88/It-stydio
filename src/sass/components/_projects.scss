@@ -1,0 +1,81 @@
+#projects {
+    padding: 50px 0;
+    background-color: #f6f6f8;
+    text-align: center;
+}
+
+.our-projects {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.47;
+    text-align: center;
+    color: $black-color;
+
+    @media screen and(min-width: 768px){
+       margin-bottom: 50px;  
+    }
+}
+
+.projects-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.56;
+    text-align: center;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom:50px;
+    }
+}
+
+.our-projects-list {
+    margin-bottom: 50px; 
+    @media screen and(min-width: 768px){
+        display: flex;
+    }
+ 
+}
+
+.our-projects-item img{        
+    margin: 0 auto;
+}
+
+.our-projects-item{
+    @media screen and(min-width: 768px) {
+        margin-right: 30px;
+    }
+}
+
+.our-projects-item:not(:first-child){
+    @media screen and(max-width: 767px){
+        display: none;
+
+    }
+}
+
+.our-projects-item:last-child {
+    margin-right: 0;
+}
+
+.all-projects {
+    display: inline-block;
+    min-width: 200px;
+    min-height: 45px;
+    padding: 15px 36px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    border: transparent;
+}
+
+.all-projects:hover,
+.all-projects:focus {
+    background-color: $button-hover;
+}

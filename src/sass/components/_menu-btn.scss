@@ -1,0 +1,40 @@
+.menu-button {
+    position: fixed;
+    z-index: 99;
+    border: transparent;
+    outline: transparent;
+    background-color: transparent;
+    fill: white;
+
+    transition: fill 250ms $transition-timing-function;
+
+  
+
+    & .mobile-menu__open {
+        opacity: 1;
+    }
+
+    &.is-open .mobile-menu__open {
+        opacity: 0;
+    }
+
+    & .mobile-menu__close {
+        opacity: 0;
+    }
+
+    &.is-open .mobile-menu__close {
+        opacity: 1;
+    }
+
+    @media screen and(max-width: 767px) {
+      
+
+        &:hover {
+            fill: $accent-color;
+        }
+    }  
+    
+    @media screen and(min-width: 768px) {
+        display: none;
+    }
+}

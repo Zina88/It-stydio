@@ -1,0 +1,104 @@
+body {
+    background-color: $white-color;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* image */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* дополнительные классы */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* скрытие заголовков */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.visually-hidden {
+    @extend %visually-hidden;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @media screen and(min-width: 480px){
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.section {
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+
+    @media screen and(min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.section__title {
+    text-align: center;
+    color: $text-title-color;
+
+
+    @media screen and(max-width: 767px) {
+        @include fonts(700, 28px, 1.18, 0.03em);
+        margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 768px) {
+        @include fonts(700, 28px, 1.18, 0.03em);
+        margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 50px;
+        @include fonts(700, 36px, 1.16, 0.03em);
+    }
+}
