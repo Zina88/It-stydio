@@ -789,7 +789,7 @@ button {
 .benefits {
   color: #ffffff;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.47;
   margin-bottom: 30px;
 }
@@ -797,6 +797,9 @@ button {
 @media screen and (min-width: 768px) {
   .benefits {
     margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.47;
   }
 }
 
@@ -829,7 +832,7 @@ button {
 }
 
 .work-container {
-  margin-top: -50px;
+  margin-top: -90px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -1031,6 +1034,12 @@ button {
   background-size: cover;
 }
 
+@media screen and (min-width: 1200px) {
+  .our-video {
+    position: relative;
+  }
+}
+
 .video {
   margin-bottom: 30px;
   font-weight: 700;
@@ -1041,22 +1050,33 @@ button {
 }
 
 .video-subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.56;
   text-align: center;
   color: #ffffff;
 }
 
-.img-video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .video-subtitle {
+    margin-bottom: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-video {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #vimeo-player {
+    width: 640px;
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
     <header class="header">
@@ -45,6 +45,7 @@
           </ul>
         </nav>
       </div>
+      <hr align="center" width="90%" size="1" color="#ccc" />
     </header>
 
     <!-- Mobile menu-->
@@ -68,6 +69,7 @@
         ></use>
       </svg>
     </button>
+
     <section class="hero logo-img" id="about_us">
       <div class="container">
         <h1 class="hero-title">Передовая IT студия</h1>
@@ -255,68 +257,68 @@
 
     <!--Наши работы-->
     <section class="section-benefits">
-      <div class="container">
-        <div class="our-works">
+      <div class="container our-works">
           <h2 class="benefits">
             Наши работы, на которых<br />мы специализируемся
           </h2>
-          <button type="button" class="benefits-link link" href="">Все услуги</a>
+          <button type="button" class="benefits-link link">Все услуги</button> 
         </div>
-        
-      </section>
-      <section class="work-container">
-        <div class="works-specifity">
-        <ul class="work-list list">
-          <li class="work-item">
-            <img class="work-img"
-              src="./images/rectangle3.jpg"
-              alt="our works"
-              width="350"
-              height="300"
-            />
-            <h3 class="subtitle"><span>01.</span> Исследование и упаковка</h3>
-            <p class="subtitle-text">
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века.
-            </p>
-            <a class="subtitle-link link" href="">Подробнее</a>
-          </li>
-          <li class="work-item">
-            <img class="work-img"
-              src="./images/rectangle3.jpg"
-              alt="our works"
-              width="350"
-              height="300"
-            />
-            <h3 class="subtitle"><span>01.</span> Исследование и упаковка</h3>
-            <p class="subtitle-text">
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века.
-            </p>
-            <a class="subtitle-link link" href="">Подробнее</a>
-          </li>
-          <li class="work-item">
-            <img class="work-img"
-              src="./images/rectangle3.jpg"
-              alt="our works"
-              width="350"
-              height="300"
-            />
-            <h3 class="subtitle"><span>01.</span> Исследование и упаковка</h3>
-            <p class="subtitle-text">
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века.
-            </p>
-            <a class="subtitle-link link" href="">Подробнее</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+     </section>
 
+     <section class="work-container">
+        <div class="works-specifity container">
+          <ul class="work-list list">
+              <li class="work-item">
+                <img class="work-img"
+                  src="./images/rectangle3.jpg"
+                  alt="our works"
+                  width="350"
+                  height="300"
+                />
+                <h3 class="subtitle"><span>01.</span> Исследование и упаковка</h3>
+                <p class="subtitle-text">
+                  Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                  вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                  на латинице с начала XVI века.
+                </p>
+                <a class="subtitle-link link" href="">Подробнее</a>
+              </li>
+
+              <li class="work-item">
+                <img class="work-img"
+                  src="./images/rectangle3.jpg"
+                  alt="our works"
+                  width="350"
+                  height="300"
+                />
+                <h3 class="subtitle"><span>01.</span> Исследование и упаковка</h3>
+                <p class="subtitle-text">
+                  Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                  вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                  на латинице с начала XVI века.
+                </p>
+                <a class="subtitle-link link" href="">Подробнее</a>
+              </li>
+
+              <li class="work-item">
+                <img class="work-img"
+                  src="./images/rectangle3.jpg"
+                  alt="our works"
+                  width="350"
+                  height="300"
+                />
+                <h3 class="subtitle"><span>01.</span> Исследование и упаковка</h3>
+                <p class="subtitle-text">
+                  Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                  вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                  на латинице с начала XVI века.
+                </p>
+                <a class="subtitle-link link" href="">Подробнее</a>
+              </li>
+          </ul>
+      </div>
+       <hr align="center" width="90%" size="1" color="#ccc" />
+    </section>
 
     <section id="projects">
       <div class="container">
@@ -349,35 +351,26 @@
       <div class="container">
         <h2 class="video">Видео о нашей работе</h2>
         <p class="video-subtitle">Просто посмотрите, как мы работаем</p>
-        <!-- <video poster="./images/video/video-poster.png">
-          <source
-            src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv"
-            type="video/ogg"
-          />
-        </video> -->
-        <div class="img-video">
-       
+        
+      </div>
+    </section>
+
+    <section class="video-section ">
+      <div class="img-video container">
         <iframe 
             id="vimeo-player"
             src="https://player.vimeo.com/video/289088543"
-            width="640"
-            height="360"
+
             frameborder="0"
             allowfullscreen
             allow="autoplay; encrypted-media"
         ></iframe>
-        <!-- <img class="img-vector" src="./images/Vector.png" alt="vec" width="60" height="60"/>
-        <button class="video-btn" type="button">Смотреть видео</button> -->
       </div>
-      </div>
+      <hr align="center" width="90%" size="1" color="#ccc" />
     </section>
 
     <!--Подпишитесь на нашу рассылку-->
-    <!-- <section id="news">
+    <section id="news">
       <div class="container">
         <h2 hidden>Полезные статьи, акции, новости</h2>
         <form action="mailto:test@test.ua">
@@ -386,17 +379,18 @@
             Полезные статьи, акции, новости - получите все это сейчас!
           </p>
           <div class="subscribe">
-          <input class="subscribe-form" type="text" />
-          <button class="news-btn" type="submit">
-            <span>Подписаться</span>
-          </button>
+            <input class="subscribe-form" type="text" placeholder="Ваш e-mail"/>
+            <button class="news-btn" type="submit">
+              Подписаться
+            </button>
           </div>
           <p class="text-ps">
             Мы не шлем спам, и не передаем никому ваши данные.
           </p>
         </form>
       </div>
-    </section> -->
+    </section>
+
     <!-- <footer id="contacts">
       <div class="contacts-container container">
         
@@ -469,9 +463,8 @@
     <script src="./js/modal-gallery.js" type="module"></script> -->
 
     <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="./js/video.js" 
+    <script src="./js/video.js" type="module"></script>
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
-
   </body>
 </html>

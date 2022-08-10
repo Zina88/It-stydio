@@ -23,12 +23,15 @@
 .benefits {
     color: $white-color;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.47;
     margin-bottom: 30px;
 
     @media screen and(min-width: 768px) {
-        margin-bottom: 70px;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.47;
     }
 }
 
@@ -58,7 +61,7 @@
 }
 
 .work-container{
-    margin-top: -50px;
+    margin-top: -90px;
     margin-bottom: 50px;
     text-align: center;
 
@@ -66,12 +69,11 @@
         margin-top: -100px;
     }
     @media screen and(min-width: 1200px) {
-        margin-top: -50px;
+        margin-top: -140px;
     }
 }
 
 .work-list {
-    border-bottom: 1px solid #e0e0e0;
     color: $text-color;
 
     @media screen and(min-width: 768px){
